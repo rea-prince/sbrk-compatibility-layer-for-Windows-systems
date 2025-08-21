@@ -12,4 +12,4 @@ Because Windows does not support the `sbrk` function, I created this header to m
 1. Download the header file (`sbk_compat.h`)
 ![alt text](image.png)
 2. Put it into your project directory
-3. Put `#include "sbk_compat.h"` in your project
+3. Put `#include "sbrk_compat.h"` in your project
