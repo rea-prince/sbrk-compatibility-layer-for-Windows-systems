@@ -1,5 +1,5 @@
 # sbrk compatibility header for Windows systems
-Because Windows does not support the `sbrk` function, I created this header to mimic the interface and behavior of the `sbrk()` function used in real Unix systems using Windows' `VirtualAlloc` function. For more information, refer to the [background](BACKGROUND.md) file.  Do note however, that it does not actually interact with hardware in the way that `sbrk()` would in real Unix systems. The heap is entirely managed in user space; the OS kernel does not track it like areal Unix heap.
+Because Windows does not support the `sbrk` function, I created this header to mimic the interface and behavior of the `sbrk()` function used in real Unix systems using Windows' `VirtualAlloc` function. Do note however, that it does not actually interact with hardware in the way that `sbrk()` would in real Unix systems. The heap is entirely managed in user space; the OS kernel does not track it like areal Unix heap. For more information, refer to the [background](BACKGROUND.md) file.
 
 # What is `sbrk`
 `sbrk` is a C library function that interacts with the operating system to manage a process's data segment, specifically the heap. It allows program to dynamically increase or decrease the amount of memory allocated to a segment.
